@@ -58,6 +58,18 @@ variable "rds_name" {
   default     = "mysql_rds"
 }
 
+variable "rds_username" {
+  description = "Username of the RDS"
+  default     = string
+  sensitive   = true
+}
+
+variable "rds_password" {
+  description = "Password of the RDS"
+  default     = string
+  sensitive   = true
+}
+
 variable "websg_name" {
   description = "Name of security group for webservers"
   default     = "webserver_sg"
