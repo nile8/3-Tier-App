@@ -1,6 +1,7 @@
 provider "aws" {
   profile = "default"
   region  = "${var.region}"
+  version = "3.57.0"
 }
 
 data "aws_availability_zones" "available" {}
